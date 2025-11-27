@@ -1,0 +1,282 @@
+/* Reset & base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+body {
+background-color: #f0f4f8;
+color: #1a1a1a;
+font-size: 14px;
+line-height: 1.5;
+}
+
+/* Header */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #0a3d62;
+color: white;
+padding: 10px 20px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+header .logo-container {
+display: flex;
+align-items: center;
+}
+
+header .logo {
+width: 40px;
+height: 40px;
+background: url('[https://www.bing.com/images/search?view=detailV2&ccid=MiaUiExr&id=AD55DA2E7D7D83F2598B72DAEE7F1FDAAE22E456&thid=OIP.MiaUiExrXUURu0p0bnaTxgAAAA&mediaurl=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fprojects%2F404%2F50da01139389853.Y3JvcCw5OTksNzgyLDAsMTA4.png&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.322694884c6b5d4511bb4a746e7693c6%3Frik%3DVuQirtoff%252b7acg%26pid%3DImgRaw%26r%3D0&exph=316&expw=404&q=h%C3%ACnh+logo+lspd&form=IRPRST&ck=3D3BFD83FABD369F2A543FAA05CC0A31&selectedindex=4&itb=0&cw=1375&ch=664&ajaxhist=0&ajaxserp=0&vt=0&sim=11](https://www.bing.com/images/search?view=detailV2&ccid=MiaUiExr&id=AD55DA2E7D7D83F2598B72DAEE7F1FDAAE22E456&thid=OIP.MiaUiExrXUURu0p0bnaTxgAAAA&mediaurl=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fprojects%2F404%2F50da01139389853.Y3JvcCw5OTksNzgyLDAsMTA4.png&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.322694884c6b5d4511bb4a746e7693c6%3Frik%3DVuQirtoff%252b7acg%26pid%3DImgRaw%26r%3D0&exph=316&expw=404&q=h%C3%ACnh+logo+lspd&form=IRPRST&ck=3D3BFD83FABD369F2A543FAA05CC0A31&selectedindex=4&itb=0&cw=1375&ch=664&ajaxhist=0&ajaxserp=0&vt=0&sim=11)') center/cover no-repeat;
+border-radius: 50%;
+margin-right: 10px;
+border: 2px solid #fbc531;
+}
+
+header nav a {
+color: #f5f6fa;
+text-decoration: none;
+font-weight: 600;
+margin-right: 20px;
+}
+
+header .user-info {
+display: flex;
+align-items: center;
+}
+
+header .user-avatar {
+width: 35px;
+height: 35px;
+background-color: #1e90ff;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+font-weight: bold;
+margin-right: 8px;
+}
+
+/* Container */
+.container {
+padding: 20px;
+}
+
+.row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+
+/* Collapsible sections */
+.collapsible {
+width: 100%;
+border-radius: 5px;
+margin-bottom: 10px;
+overflow: hidden;
+}
+
+.collapsible-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 15px;
+cursor: pointer;
+font-weight: 600;
+border-radius: 5px 5px 0 0;
+}
+
+.collapsible-icon {
+width: 20px;
+height: 20px;
+transition: transform 0.3s ease;
+}
+
+.collapsible.active .collapsible-icon {
+transform: rotate(180deg);
+}
+
+.collapsible-content {
+display: none;
+padding: 10px 15px;
+}
+
+.collapsible.active .collapsible-content {
+display: block;
+}
+
+.collapsible-content table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.collapsible th,
+.collapsible td {
+padding: 8px 10px;
+text-align: left;
+border-bottom: 1px solid #0a3d62;
+}
+
+.number-checkbox {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.number-checkbox input[type="checkbox"] {
+width: 18px;
+height: 18px;
+}
+
+.number-checkbox input[type="number"] {
+width: 50px;
+height: 30px;
+border-radius: 4px;
+border: 1px solid #aaa;
+}
+
+/* Rules section */
+.rules {
+background-color: #dff9fb;
+border-left: 5px solid #0a3d62;
+padding: 15px 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+}
+
+.rules ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+
+.rules li {
+margin-bottom: 10px;
+}
+
+/* Checkbox row */
+.checkbox-row {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.checkbox-group {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+width: 18px;
+height: 18px;
+accent-color: #0a3d62;
+}
+
+.checkbox-group input[type="number"] {
+width: 60px;
+padding: 4px;
+border-radius: 4px;
+border: 1px solid #ccc;
+}
+
+/* Search fields */
+.search-fields {
+display: flex;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.search-field {
+position: relative;
+flex: 1;
+}
+
+.search-field input[type="text"],
+.search-field input[type="number"] {
+width: 100%;
+padding: 8px 10px;
+border-radius: 5px;
+border: 1px solid #0a3d62;
+background-color: #f0f4f8;
+}
+
+.field-label {
+position: absolute;
+bottom: -18px;
+left: 5px;
+font-size: 12px;
+color: #0a3d62;
+font-weight: 600;
+}
+
+/* Case details */
+.case-details {
+border: 2px solid #e84118;
+border-radius: 8px;
+padding: 15px;
+margin-bottom: 20px;
+background-color: #ffffff;
+}
+
+.case-info div {
+margin-bottom: 10px;
+font-weight: 500;
+}
+
+.copy-button {
+display: flex;
+gap: 10px;
+margin-top: 10px;
+}
+
+.copy-button button {
+padding: 6px 12px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: 600;
+transition: all 0.2s ease;
+}
+
+.copy-button button:first-child {
+background-color: #0a3d62;
+color: #fbc531;
+}
+
+.copy-button button:first-child:hover {
+background-color: #065086;
+}
+
+.copy-button button:nth-child(2) {
+background-color: #f5f6fa;
+border: 1px solid #e84118;
+color: #e84118;
+}
+
+.copy-button button:nth-child(2):hover {
+background-color: #e84118;
+color: #fff;
+}
+
+/* --- Màu cho từng cấp độ --- */
+.collapsible:nth-child(1) .collapsible-header { background-color: #d4f1f4; color: #1a535c; } /* Cấp 1 - xanh nhạt */
+.collapsible:nth-child(2) .collapsible-header { background-color: #ffe66d; color: #ff6b6b; } /* Cấp 2 - vàng */
+.collapsible:nth-child(3) .collapsible-header { background-color: #ff9f1c; color: #ffffff; } /* Cấp 3 - cam */
+.collapsible:nth-child(4) .collapsible-header { background-color: #ff4040; color: #ffffff; } /* Cấp 4 - đỏ */
+.collapsible:nth-child(5) .collapsible-header { background-color: #9b5de5; color: #ffffff; } /* Cấp 5 - tím */
+.collapsible:nth-child(6) .collapsible-header { background-color: #000000; color: #ffffff; } /* Cấp 6 - đen */
+
+.collapsible:nth-child(1) .collapsible-content { background-color: #e0f7fa; }
+.collapsible:nth-child(2) .collapsible-content { background-color: #fff9e6; }
+.collapsible:nth-child(3) .collapsible-content { background-color: #fff3e0; }
+.collapsible:nth-child(4) .collapsible-content { background-color: #ffe0e0; }
+.collapsible:nth-child(5) .collapsible-content { background-color: #f3e6ff; }
+.collapsible:nth-child(6) .collapsible-content { background-color: #d9d9d9; }
